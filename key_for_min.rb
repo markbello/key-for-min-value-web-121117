@@ -11,7 +11,7 @@ def key_for_min_value(name_hash)
   #iterate through the array to set the lowest value
   min_value = values[0]
   values.each do |value|
-    if value < min_value
+    if min_value > value
       min_value = value
     end
   end
