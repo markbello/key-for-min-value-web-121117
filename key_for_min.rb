@@ -3,10 +3,9 @@
 
 def key_for_min_value(name_hash)
   #push all the values into an array
-  values = []
 
-  name_hash.collect do |key, value|
-    values.push(value)
+  values = name_hash.collect do |key, value|
+    value
   end
 
   #iterate through the array to set the lowest value
